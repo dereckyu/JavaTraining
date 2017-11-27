@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/configservice.iml" filepath="$PROJECT_DIR$/configservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service.iml" filepath="$PROJECT_DIR$/config-service.iml" />
     </modules>
   </component>
 </project>

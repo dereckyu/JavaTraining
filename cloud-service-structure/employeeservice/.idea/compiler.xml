@@ -8,13 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="employee-service" />
         <module name="interface" />
-        <module name="service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="employee" target="1.5" />
-      <module name="employee-service" target="1.5" />
-      <module name="interface" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="employee" target="1.8" />
+      <module name="employee-service" target="1.8" />
+      <module name="interface" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
