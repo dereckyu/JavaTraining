@@ -1,0 +1,18 @@
+package demo
+dialect "mvel"
+
+
+rule "Rate Plan A"
+when
+    ratePlanPeriod : RatePlanPeriod()
+    ratePlan : RatePlan(ratePlanCode == "A" && date >= ratePlanPeriod.startDate && date <= ratePlanPeriod.endDate)
+    then
+    ratePlan.rate = ratePlan.baseRate + 20;
+end
+
+rule "Print Rate"
+when
+    ratePlan : RatePlan()
+then
+    System.out.println("Rate Plan: " + ratePlan.getRatePlanCode() + ", Rate: " + ratePlan.getRate());
+end
